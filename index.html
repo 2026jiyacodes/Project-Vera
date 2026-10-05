@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vera | Physical truth, settled.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="orb orb-one"></div><div class="orb orb-two"></div>
+    <header>
+      <a class="brand" href="#top"><span class="brand-mark">V</span>vera<span class="dot">.</span></a>
+      <nav><a href="#protocol">Protocol</a><a href="#evidence">Evidence</a><a href="#economics">Economics</a></nav>
+      <button class="connect"><span></span>Connect wallet</button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><i></i> Neutral truth infrastructure <b>● LIVE</b></div>
+          <h1>Reality has<br /><em>no API.</em></h1>
+          <p class="lede">Vera turns conflicting, real-world evidence into economically binding truth — without asking anyone to trust a single oracle.</p>
+          <div class="hero-actions"><button class="primary" id="launchDemo">Run live verification <strong>↗</strong></button><a href="#protocol" class="text-link">Explore the protocol <span>↓</span></a></div>
+          <div class="hero-stats"><div><strong>03</strong><span>defensive layers<br />active now</span></div><div><strong>7.4×</strong><span>higher attack cost<br />than majority voting</span></div><div><strong>100%</strong><span>settlement rules<br />auditable</span></div></div>
+        </div>
+        <div class="hero-visual" aria-label="verification status visualization">
+          <div class="radar-grid"></div><div class="radar-sweep"></div>
+          <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+          <div class="center-node"><span>1.21</span><small>METRES</small></div>
+          <div class="signal s1"><b></b><label>GAUGE_01</label><small>1.18m</small></div>
+          <div class="signal s2"><b></b><label>ORBITAL_7</label><small>1.20m</small></div>
+          <div class="signal s3 danger"><b></b><label>FEED_A + B</label><small>correlated</small></div>
+          <div class="visual-tag"><span>EVENT #0842</span><strong>FLOOD / THRESHOLD</strong></div>
+        </div>
+      </section>
+
+      <section class="ticker"><div class="ticker-track"><span>PROVENANCE VERIFIED</span><b>✦</b><span>INDEPENDENCE SCORED</span><b>✦</b><span>COMMIT → REVEAL</span><b>✦</b><span>ECONOMIC SETTLEMENT</span><b>✦</b><span>PROVENANCE VERIFIED</span><b>✦</b><span>INDEPENDENCE SCORED</span><b>✦</b></div></section>
+
+      <section class="dashboard-wrap" id="protocol">
+        <div class="section-heading"><div><span class="kicker">LIVE CLAIM / 0842</span><h2>See truth<br />take shape.</h2></div><p>Not a vote. An evidence market. Watch the protocol distinguish independent observations from a coordinated echo chamber.</p></div>
+        <div class="console">
+          <aside class="claim-rail"><span class="micro">ACTIVE CLAIM</span><h3>Did flooding exceed <mark>1.0 metre</mark> at Sector 9?</h3><div class="claim-meta"><span>14:00—16:00 IST</span><span>Vadodara, IN</span></div><div class="escrow"><span>SETTLEMENT VAULT</span><strong>₹50,00,000</strong><small>locked in escrow</small></div><button id="runProtocol" class="run-button">Initiate evidence round <i>→</i></button></aside>
+          <div class="console-main">
+            <div class="console-top"><div class="stepper"><span class="active">01 <b>COMMIT</b></span><i></i><span>02 <b>REVEAL</b></span><i></i><span>03 <b>WEIGH</b></span><i></i><span>04 <b>SETTLE</b></span></div><div class="block">BLOCK <b>#19,842,882</b></div></div>
+            <div class="evidence-head"><span>PROVIDER EVIDENCE</span><span id="roundStatus">WAITING FOR ROUND</span></div>
+            <div class="providers" id="evidence">
+              <article class="provider"><div class="source-icon satellite">◒</div><div class="provider-data"><h4>Orbital-7</h4><p>Satellite observation <i>Independent path</i></p></div><div class="reading"><strong>1.20m</strong><span>92% conf.</span></div><div class="weight"><span>WEIGHT</span><b>0.94</b></div><div class="status pending">pending</div></article>
+              <article class="provider"><div class="source-icon sensor">⌁</div><div class="provider-data"><h4>Gauge 01</h4><p>Ground sensor <i>Independent path</i></p></div><div class="reading"><strong>1.18m</strong><span>97% conf.</span></div><div class="weight"><span>WEIGHT</span><b>0.98</b></div><div class="status pending">pending</div></article>
+              <article class="provider correlated"><div class="source-icon feed">◈</div><div class="provider-data"><h4>RiverFeed A</h4><p>Telemetry API <i>Shares operator with B</i></p></div><div class="reading"><strong>1.23m</strong><span>81% conf.</span></div><div class="weight"><span>WEIGHT</span><b>0.21</b></div><div class="status pending">pending</div></article>
+              <article class="provider correlated"><div class="source-icon feed">◈</div><div class="provider-data"><h4>RiverFeed B</h4><p>Telemetry API <i>Shares operator with A</i></p></div><div class="reading"><strong>1.23m</strong><span>81% conf.</span></div><div class="weight"><span>WEIGHT</span><b>0.09</b></div><div class="status pending">pending</div></article>
+            </div>
+            <div class="outcome"><div><span>INDEPENDENCE-AWARE OUTCOME</span><strong id="outcomeText">Awaiting evidence</strong></div><div class="confidence"><span>CONFIDENCE</span><div><i id="confidenceBar"></i></div><b id="confidenceNum">—</b></div><button id="settle" disabled>Settle <span>↗</span></button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="layers" id="economics"><div class="layers-title"><span class="kicker">DESIGNED FOR ADVERSARIES</span><h2>Agreement is cheap.<br /><em>Independent truth</em> is not.</h2></div><div class="layer-list"><article><span>01</span><div><h3>Commit before reveal</h3><p>Evidence is sealed before anyone can mirror the apparent majority.</p></div><b>◒</b></article><article><span>02</span><div><h3>Measure the source graph</h3><p>Correlated reports are discounted, so one feed cannot impersonate a crowd.</p></div><b>⌘</b></article><article><span>03</span><div><h3>Settle with skin in the game</h3><p>Useful evidence earns. Invalid and manipulative reports lose their stake.</p></div><b>↗</b></article></div></section>
+
+      <section class="cta"><div><span class="kicker">BEYOND FLOOD THRESHOLDS</span><h2>Build on a protocol<br />that can <em>see past consensus.</em></h2></div><button class="primary">Enter Vera <strong>↗</strong></button></section>
+    </main>
+    <footer><a class="brand" href="#top"><span class="brand-mark">V</span>vera<span class="dot">.</span></a><span>Physical truth, credibly neutral.</span><span>© 2026 VERA PROTOCOL</span></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
